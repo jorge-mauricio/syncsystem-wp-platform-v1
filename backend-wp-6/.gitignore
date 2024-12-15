@@ -1,0 +1,46 @@
+# Wordpress core files
+/wp-admin/
+/wp-includes/
+/wp-content/themes/twenty*/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/backup*/
+/wp-content/cache/
+/wp-content/debug.log
+
+# Configuration and sensitive files
+wp-config.php
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+
+# Composer
+/vendor/
+
+# Database backups
+*.sql
+*.sql.gz
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.phpunit.result.cache
