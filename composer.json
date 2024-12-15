@@ -1,0 +1,13 @@
+{
+    "name": "syncsystem/wp-platform-v1",
+    "version": "0.0.1",
+    "description": "Boiler plate for headless WordPress platform.",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Jorge Mauricio - Full Stack Web Developer",
+            "email": "web@jorgemauricio.com"
+        }
+    ]
+}

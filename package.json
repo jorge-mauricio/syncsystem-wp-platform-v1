@@ -1,0 +1,23 @@
+{
+  "name": "syncsystem-wp-platform-v1",
+  "version": "0.0.1",
+  "description": "Boiler plate for headless WordPress platform.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorge-mauricio/syncsystem-wp-platform-v1.git"
+  },
+  "author": "Jorge Mauricio - Full Stack Web Developer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jorge-mauricio/syncsystem-wp-platform-v1/issues"
+  },
+  "homepage": "https://github.com/jorge-mauricio/syncsystem-wp-platform-v1#readme",
+  "workspaces": [
+    "backend-wp-6",
+    "frontend-slimphp",
+    "react-typescript-blocks"
+  ]
+}
