@@ -154,3 +154,135 @@ Common endpoints:
 - Categories: `/wp-json/wp/v2/categories`
 - Tags: `/wp-json/wp/v2/tags`
 
+### WP-CLI Custom Commands
+
+#### Creating a Basic Command
+
+1. Create the commands directory structure (if not exists):
+```bash
+mkdir -p src/cli/Commands
+```
+
+2. Create a new command file in `src/cli/Commands/Poc1Command.php`:
+```php
+<?php
+namespace SyncSystem\CLI\Commands;
+use WP_CLI;
+
+/**
+ * Example command for proof of concept.
+ */
+class Poc1Command {
+    /**
+     * Says hello to the specified user.
+     *
+     * ## OPTIONS
+     *
+     * <name>
+     * : The name of the user
+     *
+     * [--greeting=<greeting>]
+     * : Custom greeting to use
+     * ---
+     * default: Hello
+     * ---
+     *
+     * ## EXAMPLES
+     *
+     *     # Basic usage
+     *     $ wp poc1 hello John
+     *     Hello, John!
+     *
+     *     # Custom greeting
+     *     $ wp poc1 hello John --greeting="Hi"
+     *     Hi, John!
+     */
+    public function hello($args, $assoc_args) {
+        $name = $args[0];
+        $greeting = $assoc_args['greeting'] ?? 'Hello';
+        WP_CLI::success("$greeting, $name!");
+    }
+}
+
+WP_CLI::add_command('poc1', 'SyncSystem\CLI\Commands\Poc1Command');
+```
+
+3. Create the mu-plugins directory (if not exists):
+```bash
+mkdir -p wp-content/mu-plugins
+```
+
+4. Create a loader file in `wp-content/mu-plugins/cli-commands.php`:
+```php
+<?php
+/**
+ * Plugin Name: CLI Commands Loader
+ * Description: Loads custom WP-CLI commands
+ */
+
+if (defined('WP_CLI') && WP_CLI) {
+    require_once dirname(dirname(__DIR__)) . '/src/cli/Commands/Poc1Command.php';
+}
+```
+
+5. Ensure your `wp-cli.yml` is configured:
+```yaml
+path: .
+```
+
+#### Testing the Command
+
+Run the command using:
+```bash
+composer run -- wp poc1 hello YourName
+```
+
+With custom greeting:
+```bash
+composer run -- wp poc1 hello YourName --greeting="Hi"
+```
+
+#### Command Structure Breakdown
+
+1. **Namespace**: Commands are organized under `SyncSystem\CLI\Commands`
+
+2. **Documentation Blocks**:
+   - Main class documentation describes the command group
+   - Method documentation includes:
+     - Description
+     - Options
+     - Examples
+
+3. **Parameters**:
+   - `$args`: Array of positional arguments
+   - `$assoc_args`: Array of associative arguments (--flag=value)
+
+4. **Registration**:
+   - Commands are registered using `WP_CLI::add_command()`
+   - Must-Use plugin ensures commands are always available
+
+5. **Loading**:
+   - Commands are loaded automatically via mu-plugins
+   - mu-plugins (Must-Use plugins) cannot be disabled in wp-admin
+
+#### Best Practices
+
+1. **Naming**:
+   - Use descriptive command names
+   - Follow WordPress coding standards
+   - Keep namespace consistent
+
+2. **Documentation**:
+   - Always include detailed DocBlocks
+   - Provide clear examples
+   - Document all parameters
+
+3. **Error Handling**:
+   - Use `WP_CLI::error()` for failures
+   - Use `WP_CLI::success()` for success messages
+   - Include meaningful error messages
+
+4. **Testing**:
+   - Test with various inputs
+   - Include edge cases
+   - Test with and without optional parameters
