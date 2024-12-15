@@ -1,0 +1,13 @@
+{
+  "require": {
+    "wp-cli/wp-cli-bundle": "^2.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "SyncSystem\\CLI\\Commands\\": "src/cli/Commands/"
+    }
+  },
+  "scripts": {
+    "wp": "wp"
+  }
+}

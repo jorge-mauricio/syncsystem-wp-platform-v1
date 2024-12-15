@@ -1,4 +1,3 @@
-# .editorconfig
 root = true
 
 [*]
@@ -9,6 +8,11 @@ charset = utf-8
 indent_style = space
 indent_size = 2
 
+# PHP files
+[*.{php,phtml}]
+indent_size = 4
+
+# JavaScript and TypeScript files
 [*.{ts,tsx,js,jsx,json,css,scss,md}]
 indent_size = 2
 
