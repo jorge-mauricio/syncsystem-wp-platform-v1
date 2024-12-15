@@ -1,0 +1,804 @@
+[15-Dec-2024 21:34:42 UTC] PHP Warning:  Undefined array key "WP_API_URL" in K:\syncsystem\products\syncsystem-wp-platform\v1\source_code1\frontend-slimphp\src\Application\Services\WordPressService.php on line 14
+[15-Dec-2024 21:48:27 UTC] WordPress API Error: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 21:49:39 UTC] WordPress API Error: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 21:49:39 UTC] Error in route handler: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 22:01:00 UTC] WordPress API Error: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 22:01:00 UTC] Error in route handler: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 22:03:39 UTC] WordPress API Error: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 22:03:39 UTC] Error in route handler: Client error: `GET http://localhost:8080/wp/v2/posts` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, (truncated...)
+
+[15-Dec-2024 22:07:58 UTC] Route handler started
+[15-Dec-2024 22:07:58 UTC] Base URL: http://localhost:8080/wp-json
+[15-Dec-2024 22:07:58 UTC] WP Service created
+[15-Dec-2024 22:07:58 UTC] Attempting to fetch posts from: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:07:58 UTC] PHP Warning:  curl_setopt_array(): Cannot represent a stream of type Output as a STDIO FILE* in K:\syncsystem\products\syncsystem-wp-platform\v1\source_code1\frontend-slimphp\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 81
+[15-Dec-2024 22:08:01 UTC] PHP Warning:  curl_setopt_array(): Cannot represent a stream of type Output as a STDIO FILE* in K:\syncsystem\products\syncsystem-wp-platform\v1\source_code1\frontend-slimphp\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 81
+[15-Dec-2024 22:08:05 UTC] PHP Warning:  curl_setopt_array(): Cannot represent a stream of type Output as a STDIO FILE* in K:\syncsystem\products\syncsystem-wp-platform\v1\source_code1\frontend-slimphp\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php on line 81
+[15-Dec-2024 22:08:08 UTC] Exception caught in getPosts(): cURL error 0: The cURL request was retried 3 times and did not succeed. The most likely reason for the failure is that cURL was unable to rewind the body of the request and subsequent retries resulted in the same error. Turn on the debug option to see what went wrong. See https://bugs.php.net/bug.php?id=47204 for more information. (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:08:08 UTC] Request URL was: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:08:08 UTC] Error in route handler: cURL error 0: The cURL request was retried 3 times and did not succeed. The most likely reason for the failure is that cURL was unable to rewind the body of the request and subsequent retries resulted in the same error. Turn on the debug option to see what went wrong. See https://bugs.php.net/bug.php?id=47204 for more information. (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:08:56 UTC] Route handler started
+[15-Dec-2024 22:08:56 UTC] WP Service created
+[15-Dec-2024 22:08:57 UTC] Attempting to fetch posts from: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:09:00 UTC] Got posts: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [date] => 2024-12-15T02:20:57
+            [date_gmt] => 2024-12-15T02:20:57
+            [guid] => Array
+                (
+                    [rendered] => http://localhost:8080/?p=1
+                )
+
+            [modified] => 2024-12-15T02:20:57
+            [modified_gmt] => 2024-12-15T02:20:57
+            [slug] => hello-world
+            [status] => publish
+            [type] => post
+            [link] => http://localhost:8080/C:/Program%20Files/Git/hello-world/
+            [title] => Array
+                (
+                    [rendered] => Hello world!
+                )
+
+            [content] => Array
+                (
+                    [rendered] => 
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [excerpt] => Array
+                (
+                    [rendered] => <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [author] => 1
+            [featured_media] => 0
+            [comment_status] => open
+            [ping_status] => open
+            [sticky] => 
+            [template] => 
+            [format] => standard
+            [meta] => Array
+                (
+                    [footnotes] => 
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+            [tags] => Array
+                (
+                )
+
+            [class_list] => Array
+                (
+                    [0] => post-1
+                    [1] => post
+                    [2] => type-post
+                    [3] => status-publish
+                    [4] => format-standard
+                    [5] => hentry
+                    [6] => category-uncategorized
+                )
+
+            [_links] => Array
+                (
+                    [self] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1
+                                    [targetHints] => Array
+                                        (
+                                            [allow] => Array
+                                                (
+                                                    [0] => GET
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [collection] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts
+                                )
+
+                        )
+
+                    [about] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/types/post
+                                )
+
+                        )
+
+                    [author] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/users/1
+                                )
+
+                        )
+
+                    [replies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/comments?post=1
+                                )
+
+                        )
+
+                    [version-history] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [count] => 0
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1/revisions
+                                )
+
+                        )
+
+                    [wp:attachment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/media?parent=1
+                                )
+
+                        )
+
+                    [wp:term] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [taxonomy] => category
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/categories?post=1
+                                )
+
+                            [1] => Array
+                                (
+                                    [taxonomy] => post_tag
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/tags?post=1
+                                )
+
+                        )
+
+                    [curies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => wp
+                                    [href] => https://api.w.org/{rel}
+                                    [templated] => 1
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[15-Dec-2024 22:09:00 UTC] Error in route handler: Unknown "dump" function.
+[15-Dec-2024 22:10:06 UTC] Route handler started
+[15-Dec-2024 22:10:06 UTC] WP Service created
+[15-Dec-2024 22:10:06 UTC] Attempting to fetch posts from: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:10:09 UTC] Got posts: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [date] => 2024-12-15T02:20:57
+            [date_gmt] => 2024-12-15T02:20:57
+            [guid] => Array
+                (
+                    [rendered] => http://localhost:8080/?p=1
+                )
+
+            [modified] => 2024-12-15T02:20:57
+            [modified_gmt] => 2024-12-15T02:20:57
+            [slug] => hello-world
+            [status] => publish
+            [type] => post
+            [link] => http://localhost:8080/C:/Program%20Files/Git/hello-world/
+            [title] => Array
+                (
+                    [rendered] => Hello world!
+                )
+
+            [content] => Array
+                (
+                    [rendered] => 
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [excerpt] => Array
+                (
+                    [rendered] => <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [author] => 1
+            [featured_media] => 0
+            [comment_status] => open
+            [ping_status] => open
+            [sticky] => 
+            [template] => 
+            [format] => standard
+            [meta] => Array
+                (
+                    [footnotes] => 
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+            [tags] => Array
+                (
+                )
+
+            [class_list] => Array
+                (
+                    [0] => post-1
+                    [1] => post
+                    [2] => type-post
+                    [3] => status-publish
+                    [4] => format-standard
+                    [5] => hentry
+                    [6] => category-uncategorized
+                )
+
+            [_links] => Array
+                (
+                    [self] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1
+                                    [targetHints] => Array
+                                        (
+                                            [allow] => Array
+                                                (
+                                                    [0] => GET
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [collection] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts
+                                )
+
+                        )
+
+                    [about] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/types/post
+                                )
+
+                        )
+
+                    [author] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/users/1
+                                )
+
+                        )
+
+                    [replies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/comments?post=1
+                                )
+
+                        )
+
+                    [version-history] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [count] => 0
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1/revisions
+                                )
+
+                        )
+
+                    [wp:attachment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/media?parent=1
+                                )
+
+                        )
+
+                    [wp:term] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [taxonomy] => category
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/categories?post=1
+                                )
+
+                            [1] => Array
+                                (
+                                    [taxonomy] => post_tag
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/tags?post=1
+                                )
+
+                        )
+
+                    [curies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => wp
+                                    [href] => https://api.w.org/{rel}
+                                    [templated] => 1
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[15-Dec-2024 22:10:54 UTC] Route handler started
+[15-Dec-2024 22:10:54 UTC] WP Service created
+[15-Dec-2024 22:10:54 UTC] Attempting to fetch posts from: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:10:57 UTC] Got posts: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [date] => 2024-12-15T02:20:57
+            [date_gmt] => 2024-12-15T02:20:57
+            [guid] => Array
+                (
+                    [rendered] => http://localhost:8080/?p=1
+                )
+
+            [modified] => 2024-12-15T02:20:57
+            [modified_gmt] => 2024-12-15T02:20:57
+            [slug] => hello-world
+            [status] => publish
+            [type] => post
+            [link] => http://localhost:8080/C:/Program%20Files/Git/hello-world/
+            [title] => Array
+                (
+                    [rendered] => Hello world!
+                )
+
+            [content] => Array
+                (
+                    [rendered] => 
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [excerpt] => Array
+                (
+                    [rendered] => <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [author] => 1
+            [featured_media] => 0
+            [comment_status] => open
+            [ping_status] => open
+            [sticky] => 
+            [template] => 
+            [format] => standard
+            [meta] => Array
+                (
+                    [footnotes] => 
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+            [tags] => Array
+                (
+                )
+
+            [class_list] => Array
+                (
+                    [0] => post-1
+                    [1] => post
+                    [2] => type-post
+                    [3] => status-publish
+                    [4] => format-standard
+                    [5] => hentry
+                    [6] => category-uncategorized
+                )
+
+            [_links] => Array
+                (
+                    [self] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1
+                                    [targetHints] => Array
+                                        (
+                                            [allow] => Array
+                                                (
+                                                    [0] => GET
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [collection] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts
+                                )
+
+                        )
+
+                    [about] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/types/post
+                                )
+
+                        )
+
+                    [author] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/users/1
+                                )
+
+                        )
+
+                    [replies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/comments?post=1
+                                )
+
+                        )
+
+                    [version-history] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [count] => 0
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1/revisions
+                                )
+
+                        )
+
+                    [wp:attachment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/media?parent=1
+                                )
+
+                        )
+
+                    [wp:term] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [taxonomy] => category
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/categories?post=1
+                                )
+
+                            [1] => Array
+                                (
+                                    [taxonomy] => post_tag
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/tags?post=1
+                                )
+
+                        )
+
+                    [curies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => wp
+                                    [href] => https://api.w.org/{rel}
+                                    [templated] => 1
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[15-Dec-2024 22:30:10 UTC] Attempting to fetch posts from: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:30:15 UTC] WordPress API Error: cURL error 28: Operation timed out after 5014 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:30:15 UTC] WordPress API Configuration Error: Failed to connect to WordPress API: cURL error 28: Operation timed out after 5014 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:30:41 UTC] Route handler started
+[15-Dec-2024 22:30:41 UTC] WP Service created
+[15-Dec-2024 22:30:41 UTC] Attempting to fetch posts from: http://localhost:8080/wp-json/wp/v2/posts
+[15-Dec-2024 22:30:44 UTC] Got posts: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [date] => 2024-12-15T02:20:57
+            [date_gmt] => 2024-12-15T02:20:57
+            [guid] => Array
+                (
+                    [rendered] => http://localhost:8080/?p=1
+                )
+
+            [modified] => 2024-12-15T02:20:57
+            [modified_gmt] => 2024-12-15T02:20:57
+            [slug] => hello-world
+            [status] => publish
+            [type] => post
+            [link] => http://localhost:8080/C:/Program%20Files/Git/hello-world/
+            [title] => Array
+                (
+                    [rendered] => Hello world!
+                )
+
+            [content] => Array
+                (
+                    [rendered] => 
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [excerpt] => Array
+                (
+                    [rendered] => <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+                    [protected] => 
+                )
+
+            [author] => 1
+            [featured_media] => 0
+            [comment_status] => open
+            [ping_status] => open
+            [sticky] => 
+            [template] => 
+            [format] => standard
+            [meta] => Array
+                (
+                    [footnotes] => 
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+            [tags] => Array
+                (
+                )
+
+            [class_list] => Array
+                (
+                    [0] => post-1
+                    [1] => post
+                    [2] => type-post
+                    [3] => status-publish
+                    [4] => format-standard
+                    [5] => hentry
+                    [6] => category-uncategorized
+                )
+
+            [_links] => Array
+                (
+                    [self] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1
+                                    [targetHints] => Array
+                                        (
+                                            [allow] => Array
+                                                (
+                                                    [0] => GET
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [collection] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts
+                                )
+
+                        )
+
+                    [about] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/types/post
+                                )
+
+                        )
+
+                    [author] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/users/1
+                                )
+
+                        )
+
+                    [replies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/comments?post=1
+                                )
+
+                        )
+
+                    [version-history] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [count] => 0
+                                    [href] => http://localhost:8080/wp-json/wp/v2/posts/1/revisions
+                                )
+
+                        )
+
+                    [wp:attachment] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [href] => http://localhost:8080/wp-json/wp/v2/media?parent=1
+                                )
+
+                        )
+
+                    [wp:term] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [taxonomy] => category
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/categories?post=1
+                                )
+
+                            [1] => Array
+                                (
+                                    [taxonomy] => post_tag
+                                    [embeddable] => 1
+                                    [href] => http://localhost:8080/wp-json/wp/v2/tags?post=1
+                                )
+
+                        )
+
+                    [curies] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => wp
+                                    [href] => https://api.w.org/{rel}
+                                    [templated] => 1
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+

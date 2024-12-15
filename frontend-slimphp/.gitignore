@@ -1,0 +1,44 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE and Editor files
+.idea/
+# .vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependencies
+/vendor/
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+composer.lock
+
+# Testing and Coverage
+/coverage/
+.phpunit.result.cache
+/tests/coverage/
+
+# Cache and Logs
+/logs/*
+!/logs/README.md
+/cache/*
+!/cache/README.md
+
+# Build outputs
+/public/build/
+/public/hot
+/public/storage
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

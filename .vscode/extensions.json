@@ -1,6 +1,10 @@
 {
   "recommendations": [
     "EditorConfig.EditorConfig",
+
+    // frontend-slimphp
+    "mblode.twig-language-2",
+
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",

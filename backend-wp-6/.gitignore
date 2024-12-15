@@ -16,8 +16,14 @@ wp-config.php
 /sitemap.xml
 /sitemap.xml.gz
 
-# Composer
+# Dependencies
 /vendor/
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+composer.lock
 
 # Database backups
 *.sql
