@@ -1,4 +1,1 @@
 path: .
-# automations:
-#   poc1:
-#     - SyncSystem\CLI\Commands\Poc1Command
