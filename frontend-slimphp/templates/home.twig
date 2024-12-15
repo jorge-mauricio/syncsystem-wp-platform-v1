@@ -1,0 +1,30 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <h1>Latest Posts</h1>
+
+    {% if error %}
+        <div style="color: red; padding: 10px; background: #ffebee;">
+            Error: {{ error }}
+        </div>
+    {% endif %}
+
+    {% if debug is defined %}
+        <div style="background: #e3f2fd; padding: 10px; margin: 10px 0;">
+            <strong>Debug Info:</strong><br>
+            Attempting to connect to: {{ debug.url }}<br>
+            Environment variables: <pre>{{ dump(debug.env) }}</pre>
+        </div>
+    {% endif %}
+
+    {% if posts is empty %}
+        <p>No posts found or error occurred.</p>
+    {% else %}
+        {% for post in posts %}
+            <article>
+                <h2>{{ post.title.rendered|raw }}</h2>
+                <div>{{ post.excerpt.rendered|raw }}</div>
+            </article>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
