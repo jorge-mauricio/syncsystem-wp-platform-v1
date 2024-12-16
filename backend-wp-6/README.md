@@ -154,6 +154,80 @@ Common endpoints:
 - Categories: `/wp-json/wp/v2/categories`
 - Tags: `/wp-json/wp/v2/tags`
 
+### GraphQL Setup
+
+> **Note**: After cloning the repository and running `composer install`, developers will need to manually install the WPGraphQL plugin as it's managed through WordPress's plugin system, not Composer.
+> 
+
+1. Install WPGraphQL plugin:
+```bash
+composer run -- wp plugin install wp-graphql --activate
+```
+
+2. Verify installation by accessing the GraphQL endpoint:
+- URL: `http://localhost:8080/graphql`
+- Method: POST
+- Headers: `Content-Type: application/json`
+
+3. Test with a basic query:
+```json
+{
+  "query": "{ 
+    posts { 
+      nodes { 
+        id 
+        title 
+        date 
+        author { 
+          node {
+            name 
+          }
+        } 
+        categories { 
+          nodes { 
+            name 
+          } 
+        } 
+      } 
+    } 
+  }"
+}
+```
+
+4. Response structure:
+```json
+{
+  "data": {
+    "posts": {
+      "nodes": [
+        {
+          "id": "cG9zdDox",
+          "title": "Hello world!",
+          "date": "2024-12-15T02:20:57",
+          "author": {
+            "node": {
+              "name": "wp_dev_user"
+            }
+          },
+          "categories": {
+            "nodes": [
+              {
+                "name": "Uncategorized"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+Common GraphQL queries:
+- Get all posts: `{ posts { nodes { title } } }`
+- Get specific post: `{ post(id: "post-id") { title content } }`
+- Get posts by category: `{ posts(where: { categoryName: "category-name" }) { nodes { title } } }`
+
 ### WP-CLI Custom Commands
 
 #### Creating a Basic Command
@@ -286,3 +360,11 @@ composer run -- wp poc1 hello YourName --greeting="Hi"
    - Test with various inputs
    - Include edge cases
    - Test with and without optional parameters
+
+<!-- 
+# Next Step:
+> TODO: Future improvement possibilities:
+> - Create custom WP-CLI command for post-setup tasks including plugin installation
+> - Consider using wpackagist for plugin management through Composer
+> - Add automated setup script
+- -->
