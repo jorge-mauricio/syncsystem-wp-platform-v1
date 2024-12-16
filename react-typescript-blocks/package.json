@@ -1,0 +1,27 @@
+{
+  "name": "react-typescript-blocks",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "check-types": "tsc --noEmit",
+    "watch": "wp-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/wordpress__block-editor": "^11.5.16",
+    "@types/wordpress__blocks": "^12.5.16",
+    "@types/wordpress__components": "^23.0.12",
+    "@wordpress/block-editor": "^14.9.0",
+    "@wordpress/blocks": "^14.3.0",
+    "@wordpress/components": "^29.0.0",
+    "@wordpress/i18n": "^5.14.0",
+    "@wordpress/scripts": "^30.7.0",
+    "typescript": "^5.7.2"
+  }
+}

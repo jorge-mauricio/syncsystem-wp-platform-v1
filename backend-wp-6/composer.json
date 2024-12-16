@@ -1,4 +1,5 @@
 {
+  "_comment": "run backend server composer run -- wp server --host=localhost --port=8080",
   "require": {
     "wp-cli/wp-cli-bundle": "^2.9"
   },
@@ -9,5 +10,8 @@
   },
   "scripts": {
     "wp": "wp"
+  },
+  "config": {
+      "process-timeout": 0
   }
 }
