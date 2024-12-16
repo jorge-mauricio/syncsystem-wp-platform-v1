@@ -145,11 +145,28 @@ composer test        # Runs test suite
    - Implement Gutenberg blocks
    - Create component library
 
-## Contributing
-1. Create a new branch for your feature
-2. Follow the existing code structure
-3. Update documentation as needed
-4. Submit a pull request
+### GraphQL Integration
+GraphQL service has been added as an alternative to REST API communication. Currently implemented:
+- GraphQL service for making queries
+- Test endpoint at `/graphql-test`
+- Basic post query functionality
+
+Example query implementation:
+```php
+$graphql = new GraphQLService();
+$result = $graphql->query('
+    query GetPosts {
+        posts {
+            nodes {
+                id
+                title
+                date
+            }
+        }
+    }
+');
+
+Test endpoint available at `http://localhost:8081/graphql-test`
 
 ## Additional Resources
 - [SlimPHP Documentation](https://www.slimframework.com/docs/v4/)

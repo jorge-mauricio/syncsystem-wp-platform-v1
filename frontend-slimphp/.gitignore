@@ -28,7 +28,8 @@ composer.lock
 !/logs/README.md
 /cache/*
 !/cache/README.md
-public/php_errors.log
+/public/php_errors.log
+# not working ^
 
 # Build outputs
 /public/build/
