@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <h1>GraphQL Test - Posts</h1>
+
+    {% if error %}
+        <div style="color: red; padding: 10px; background: #ffebee;">
+            Error: {{ error }}
+        </div>
+    {% endif %}
+
+    {% if posts is empty %}
+        <p>No posts found or error occurred.</p>
+    {% else %}
+        {% for post in posts %}
+            <article>
+                <h2>{{ post.title }}</h2>
+                <div class="meta">
+                    ID: {{ post.id }}<br>
+                    Date: {{ post.date }}
+                </div>
+            </article>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
